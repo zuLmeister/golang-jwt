@@ -13,7 +13,7 @@ Features
 
 Setup Project
 Clone Repository
-git clone https://github.com/yourname/golang-jwt.git
+git clone https://github.com/zuLmeister/golang-jwt.git
 cd golang-jwt
 
 Install Dependencies
