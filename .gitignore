@@ -1,0 +1,57 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build results
+*.test
+*.out
+*.db
+
+# Go build cache
+/build/
+bin/
+dist/
+vendor/
+*.log
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local environment variables
+.env
+.env.local
+.env.*.local
+
+# MySQL dumps / local development DB
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs
+*.log
+logs/
+log/
+debug.log
+
+# Postman environment auto-sync
+.postman/
+
+# Private keys & tokens
+*.pem
+*.key
+*.crt
+*.csr
+
+# Other potential security files
+config/secrets/

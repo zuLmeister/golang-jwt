@@ -1,0 +1,114 @@
+{
+  "info": {
+    "name": "AUTH API BOILERPLATE GOLANG",
+    "_postman_id": "b7ac2b74-3a12-4789-a9f8-dc29e819099c",
+    "description": "Auth API for Go Boilerplate with JWT Access & Refresh Token Rotation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/register",
+          "host": ["{{base_url}}"],
+          "path": ["register"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"password\": \"password123\"\n}",
+          "options": { "raw": { "language": "json" } }
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/login",
+          "host": ["{{base_url}}"],
+          "path": ["login"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"john@example.com\",\n    \"password\": \"password123\"\n}",
+          "options": { "raw": { "language": "json" } }
+        }
+      }
+    },
+    {
+      "name": "Profile (Auth Required)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/profile",
+          "host": ["{{base_url}}"],
+          "path": ["profile"]
+        }
+      }
+    },
+    {
+      "name": "Refresh Token",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/refresh",
+          "host": ["{{base_url}}"],
+          "path": ["refresh"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n   \"refresh_token\": \"{{refresh_token}}\"\n}",
+          "options": { "raw": { "language": "json" } }
+        }
+      }
+    },
+    {
+      "name": "Logout",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/logout",
+          "host": ["{{base_url}}"],
+          "path": ["logout"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n   \"refresh_token\": \"{{refresh_token}}\"\n}",
+          "options": { "raw": { "language": "json" } }
+        }
+      }
+    },
+    {
+      "name": "Get All Users (Auth Required)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/users",
+          "host": ["{{base_url}}"],
+          "path": ["users"]
+        }
+      }
+    }
+  ],
+  "event": [],
+  "protocolProfileBehavior": {}
+}
