@@ -31,7 +31,7 @@ Linux / macOS:
 openssl rand -base64 64
 ```
 
-### Buat file .env
+### Make .env file
 ```bash
 DB_HOST=localhost
 DB_PORT=3306
@@ -60,10 +60,10 @@ http://localhost:8080
 ### API Endpoint
 ```bash
 Method	Endpoint	
-POST	/register	
-POST	/login	
-POST	/refresh	
-GET	/profile	
+POST	/api/v1/register	
+POST	/api/v1/login	
+POST	/api/v1/refresh	
+GET	/api/v1/users	
 ```
 
 ### Collection JSON
