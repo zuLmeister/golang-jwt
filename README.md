@@ -9,42 +9,12 @@ Features
 - Clean Code & Scalable Folder Structure
 - Cross-platform support (Windows/Linux/macOS)
 
-Project Structure
-practice-golang/
-│
-├── config/
-│ └── database.go
-├── controllers/
-│ └── auth.go
-│ └── user.go
-├── middleware/
-│ └── auth.go
-├── models/
-│ ├── user.go
-│ └── refresh_token.go
-├── routes/
-│ └── routes.go
-├── utils/
-│ └── jwt.go
-├── .env
-├── .gitignore
-├── go.mod
-└── main.go
 
-Requirements
-
-Go 1.21+
-
-MySQL 8+
-
-Git
-
-Postman/Thunder Client (optional)
 
 Setup Project
 Clone Repository
-git clone https://github.com/yourname/practice-golang.git
-cd practice-golang
+git clone https://github.com/yourname/golang-jwt.git
+cd golang-jwt
 
 Install Dependencies
 go mod tidy
