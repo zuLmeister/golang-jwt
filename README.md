@@ -14,7 +14,7 @@ cd golang-jwt
 go mod tidy
 ```
 
-### Buat Database MySQL
+### Make mysql Database
 ```bash
 CREATE DATABASE myappdb;
 ```
