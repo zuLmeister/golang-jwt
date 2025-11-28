@@ -1,6 +1,6 @@
 ---
 
-## Setup & Installation
+## Setup & Installation JWT Golang GORM
 
 ### Clone Project
 ```bash
